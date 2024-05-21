@@ -39,9 +39,33 @@ let myObj = {
 //functions
 
 const myFunction= function(){
-    console.log("Hello");
+    // console.log("Hello");
 }
 myFunction()
 
-console.log(typeof BigInt)
+// console.log(typeof BigInt)
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Memory
+
+//Stack (Primitive Types) , Heap (Non-Primitive Types)
+
+let myGamingname = "Kratos"
+
+let anotherName = myGamingname
+anotherName = "Gaming"
+
+console.log(myGamingname)
+console.log(anotherName)
+
+let userOne = {
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "usemuse@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
