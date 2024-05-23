@@ -40,8 +40,8 @@ const obj5 = {
 // 
 const obj4 = { ...obj1, ...obj2 }  // spread  operator
 const obj3 = Object.assign({}, obj1, obj2, obj5) //merging two objects , {}-> optional parameter
-console.log(obj4)
-console.log(obj3)
+// console.log(obj4)
+// console.log(obj3)
 
 
 const users = [
@@ -59,12 +59,43 @@ const users = [
     },
 ]
 
-console.log(users[2].email)
+// console.log(users[2].email)
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys((tinderUser)));
-console.log(Object.values((tinderUser)));
-console.log(Object.entries((tinderUser)));
+// console.log(Object.keys((tinderUser)));
+// console.log(Object.values((tinderUser)));
+// console.log(Object.entries((tinderUser)));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //property available or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //property available or not
+
+
+//+++++++++++++OBJECT DESTRUCTURING+++++++++++++++++
+
+const course = {
+    id:1,
+    name:"JS",
+    price:2500,
+    instructor:"Kratos"
+}
+
+// console.log(course.instructor)
+
+const {instructor: ins} = course  //another way to access value //can give name according to own benefit
+// console.log(instructor)
+console.log(ins)
+
+//------------------API-----------------
+//  {                       // json structure
+//     "name":"Kratos",
+//     "id":"10",
+//     "courseName": "Gaming C++",
+//     "price":"free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
+
